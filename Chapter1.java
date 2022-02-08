@@ -37,16 +37,40 @@ public class Chapter1 implements TaskHandler {
     public void exercise1(Scanner in) {
         UIUtility.showMenuTitle("Exercise 1");
         // Your code here
+        double number1 = InputUtility.getDouble("Enter a number", in);
+        double number2 = InputUtility.getDouble("Enter another number", in);
+
+        if (number1 > number2) {
+            System.out.println("Largest is:" + number1);
+        }
+        if (number2 > number1) {
+            System.out.println("Largest is:" + number2);
+        }
+        else {
+            System.out.println("Largest is:" + number1);
+        }
+
     }
 
     public void exercise2(Scanner in) {
         UIUtility.showMenuTitle("Exercise 2");
         // Your code here
+        double number1 = InputUtility.getDouble("Enter a number", in);
+        double number2 = InputUtility.getDouble("Enter another number", in);
+
+        double average = (number1 + number2) / 2;
+
+        System.out.printf("The average is: %.1f" , average);
     }
 
     public void exercise3(Scanner in) {
         UIUtility.showMenuTitle("Exercise 3");
         // Your code here
+        double radius = InputUtility.getDouble("Enter a Radius", in);
+        double circ = 2 * Math.PI * radius;
+        double area = Math.PI * radius * radius;
+        System.out.printf("Circumference: %.2f\n", circ);
+        System.out.printf("Area: %.2f", area);
     }
 
     public void sampleExercise(Scanner in) {
@@ -54,9 +78,12 @@ public class Chapter1 implements TaskHandler {
         // Sample code here
         String name = InputUtility.getString("What is your name?", in);
         int age = InputUtility.getIntInRange("What is your age?", 0, 200, in);
-        String favFood = InputUtility.validateUserString("What is your favorite food?", new String[]{"Ice Cream", "Pizza", "Sushi", "Burger"}, in);
+        String favFood = InputUtility.validateUserString("What is your favorite food?",
+                new String[] { "Ice Cream", "Pizza", "Sushi", "Burger" }, in);
         int favNum = InputUtility.getInt("What is your favorite number?", in);
         double temperature = InputUtility.getDouble("What is your body temperature in Fahrenheit?", in);
-        System.out.printf("Hello %s! You are %d years old. like to eat %s, %n your favorite number is %d, and your body temp is %.1f degrees fahrenheit.", name, age, favFood, favNum, temperature);
+        System.out.printf(
+                "Hello %s! You are %d years old. like to eat %s, %n your favorite number is %d, and your body temp is %.1f degrees fahrenheit.",
+                name, age, favFood, favNum, temperature);
     }
 }
