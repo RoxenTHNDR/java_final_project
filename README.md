@@ -15,3 +15,7 @@ Our Main focus for chapter one was on creating variables and getting user input.
 ## Chapter 2
 
 Our largest focus was on boolean statements, math operators, and casting of data types. Such as using && for "and" or || for "or" and ! for "not". I feel like other than using these the if statements are practically the same thing as they are in python. As for math operators I found it fairly easy as long as I followed the order of operations. Casting of data types I actually found quite interesting in what can go what ways. Such as you do not need to cast from an int to a double however you do for vise versa.
+
+## Chapter 3
+
+This chapter we mainly focused on types of loops, plus the switch statements. I found it interesting the difference between the while loop and a do-while loop. In my opinion they are practically saying the same thing, except for the condition being in different places. I liked how the changing of the condition is done within the declaration of the condition in the for loop rather than possibly forgetting to change the condition in a while loop. I don’t know if I am a massive fan of using case statements, as in code lab it wouldn’t allow for testing of characters that are between others. Such as testing for 1-3 instead of having to test for 1, 2, and 3 in different case statements. 
