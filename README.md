@@ -19,3 +19,7 @@ Our largest focus was on boolean statements, math operators, and casting of data
 ## Chapter 3
 
 This chapter we mainly focused on types of loops, plus the switch statements. I found it interesting the difference between the while loop and a do-while loop. In my opinion they are practically saying the same thing, except for the condition being in different places. I liked how the changing of the condition is done within the declaration of the condition in the for loop rather than possibly forgetting to change the condition in a while loop. I don’t know if I am a massive fan of using case statements, as in code lab it wouldn’t allow for testing of characters that are between others. Such as testing for 1-3 instead of having to test for 1, 2, and 3 in different case statements. 
+
+## Chapter 4
+
+During Chapter four we had mainly focused upon creating methods within classes. I had actually found this week to be fairly easy as the process of creating these methods were practically the same as in my .Net course covering C sharp. I found it fairly easy to know when to put a void tag or the return type on the method itself, however I still feel like I may need more practice with static versus non-static and public versus private.
