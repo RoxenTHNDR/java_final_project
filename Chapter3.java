@@ -28,7 +28,7 @@ public class Chapter3 {
             }
             UIUtility.pressEnterToContinue(in);
         }
-        System.out.println("\nExiting Chapter 1 Menu.");
+        System.out.println("\nExiting Chapter 3 Menu.");
     }
 
     public void exercise1(Scanner in) {

@@ -33,7 +33,7 @@ public class Chapter2 implements TaskHandler {
             }
             UIUtility.pressEnterToContinue(in);
         }
-        System.out.println("\nExiting Chapter 1 Menu.");
+        System.out.println("\nExiting Chapter 2 Menu.");
     }
 
     public void exercise1(Scanner in) {
