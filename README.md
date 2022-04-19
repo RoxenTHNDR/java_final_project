@@ -23,3 +23,15 @@ This chapter we mainly focused on types of loops, plus the switch statements. I 
 ## Chapter 4
 
 During Chapter four we had mainly focused upon creating methods within classes. I had actually found this week to be fairly easy as the process of creating these methods were practically the same as in my .Net course covering C sharp. I found it fairly easy to know when to put a void tag or the return type on the method itself, however I still feel like I may need more practice with static versus non-static and public versus private.
+
+## Chapter 5
+
+In chapter 5 we took a really deep dive into arrays and manipulating them. I really enjoyed doing the chapter 5 challenge as it actually had me thinking hard for a bit. However I feel like at its core we had worked on this or something similar in programming logic and the manipulation of arrays. However, one thing that was new to me was using a for-each loop. I feel like it would be easier writing this 
+```java
+for (int num : nums)
+``` 
+rather than this: 
+```java
+for (int i = 0, i <= nums.length - 1; i++)
+```
+
