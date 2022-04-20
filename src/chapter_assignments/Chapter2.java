@@ -1,6 +1,8 @@
+package src.chapter_assignments;
 import java.util.Scanner;
 
-import org.w3c.dom.css.Counter;
+import src.utilities.*;
+
 
 public class Chapter2 implements TaskHandler {
     @Override

@@ -1,3 +1,10 @@
+import src.chapter_assignments.Chapter1;
+import src.chapter_assignments.Chapter2;
+import src.chapter_assignments.Chapter3;
+import src.chapter_assignments.Chapter4;
+import src.chapter_assignments.Chapter5Challenge;
+import src.utilities.UIUtility;
+
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {

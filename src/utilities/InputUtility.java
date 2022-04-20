@@ -1,3 +1,4 @@
+package src.utilities;
 import java.util.Arrays;
 import java.util.Scanner;
 public class InputUtility {

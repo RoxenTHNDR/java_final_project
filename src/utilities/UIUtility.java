@@ -1,3 +1,4 @@
+package src.utilities;
 import java.util.Scanner;
 public class UIUtility {
     /**

@@ -1,7 +1,11 @@
+package src.chapter_assignments;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
+import src.utilities.*;
+
+
 public class Chapter5Challenge implements TaskHandler {
     @Override
     public void handleTask(Scanner in) {

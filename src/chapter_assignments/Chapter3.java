@@ -1,5 +1,8 @@
+package src.chapter_assignments;
 import java.util.Scanner;
 import java.util.Random;
+
+import src.utilities.*;
 
 public class Chapter3 {
     public void handleTask(Scanner in) {
