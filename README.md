@@ -35,3 +35,13 @@ rather than this:
 for (int i = 0, i <= nums.length - 1; i++)
 ```
 
+## User Stories
+
+- As a MTG player I want to ***add books to a deck list***, so that I have a list of my deck
+- As a MTG player I want to be able to ***view all of my cards*** so that I can make sure none of my cards are on the ban list
+- As a MTG player I want to be able to ***see all of my cards*** in the deck of a ***specific color***
+- As a MTG player I want to be able to ***sort my cards*** by their converted mana cost
+- As a MTG player I want to be able to ***see the details of a specific card***
+- As a MTG player I want to be able to ***move cards*** to simulate card movements
+- As a MTG player I want to be able to ***swap the location*** of cards to simulate shuffling a deck
+- As a MTG player I want to be able to ***move cards*** from the deck to my hand (moving a value from one array to another)
