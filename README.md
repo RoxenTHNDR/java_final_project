@@ -44,4 +44,12 @@ for (int i = 0, i <= nums.length - 1; i++)
 - As a MTG player I want to be able to ***see the details of a specific card***
 - As a MTG player I want to be able to ***move cards*** to simulate card movements
 - As a MTG player I want to be able to ***swap the location*** of cards to simulate shuffling a deck
-- As a MTG player I want to be able to ***move cards*** from the deck to my hand (moving a value from one array to another)
+- As a MTG player I want to be able to ***move cards*** from the deck to my hand (moving a value from one spot to another)
+
+## Class Diagram
+
+| +Deck |
+|:-------|
+| - cardName: String<br>- convertedMana: Int<br>|
+|<\<create>\> +Deck() <br> <\<create>\> +Deck(cardName: String, convertedMana: Int) <br> +getCardName(): String <br> +setCardName(cardName: String): void <br> +getCMC(): Int <br> +setCMC(convertedMana: Int) <br> -validateName(cardName: String): Void <br> -validateCMC(convertedMana: Int) <br> +deckToHand(card: Deck): void
+

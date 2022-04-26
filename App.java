@@ -2,6 +2,7 @@ import src.chapter_assignments.Chapter1;
 import src.chapter_assignments.Chapter2;
 import src.chapter_assignments.Chapter3;
 import src.chapter_assignments.Chapter4;
+import src.chapter_assignments.Chapter5;
 import src.chapter_assignments.Chapter5Challenge;
 import src.utilities.UIUtility;
 
@@ -18,7 +19,8 @@ public class App {
                 "Chapter 2",
                 "Chapter 3",
                 "Chapter 4",
-                "Chapter 5 Challenge"
+                "Chapter 5 Challenge",
+                "Chapter 5"
             };
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner);
             if (choice == 0)
@@ -40,6 +42,9 @@ public class App {
                     break;
                 case 5: 
                     new Chapter5Challenge().handleTask(scanner);
+                    break;
+                case 6: 
+                    new Chapter5().handleTask(scanner);
                     break;
                 
             }
