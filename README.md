@@ -37,19 +37,29 @@ for (int i = 0, i <= nums.length - 1; i++)
 
 ## User Stories
 
-- As a MTG player I want to ***add cards to my hand***, so that I can simulate drawing a card
-- As a MTG player I want to be able to ***view all of my cards*** in my hand t know what I have to play
-- As a MTG player I want to be able to ***see all of my cards*** in the hand of a ***specific color***
-- As a MTG player I want to be able to ***sort my cards*** by their converted mana cost
-- As a MTG player I want to be able to ***see the details of a specific card***
-- As a MTG player I want to be able to ***move cards*** to simulate putting cards next to eachother for combo planning
-- As a MTG player I want to be able to ***swap the location*** so that an opponite can chose a card at random
-- As a MTG player I want to be able to ***move cards*** from the deck to my hand (moving a value from one spot to another)
+- As a MTG player I want to ***add cards to my hand***, so that I can simulate drawing a card.
+- As a MTG player I want to be able to ***view all of my cards*** in my hand t know what I have to play.
+- As a MTG player I want to be able to ***see all of my cards*** in the hand of a ***specific color***.
+- As a MTG player I want to be able to ***sort my cards*** by their converted mana cost.
+- As a MTG player I want to be able to ***see the details of a specific card***.
+- As a MTG player I want to be able to ***move cards*** to simulate putting cards next to eachother for combo planning.
+- As a MTG player I want to be able to ***shuffle the location*** so that an opponite can chose a card at random.
+- As a MTG player I want to be able to ***remove cards*** to simulate playing a card.
 
 ## Class Diagram
 
-| +Deck |
+| +Card |
 |:-------|
-| - cardName: String<br>- convertedMana: Int<br>|
-|<\<create>\> +Deck() <br> <\<create>\> +Deck(cardName: String, convertedMana: Int) <br> +getCardName(): String <br> +setCardName(cardName: String): void <br> +getCMC(): Int <br> +setCMC(convertedMana: Int) <br> -validateName(cardName: String): Void <br> -validateCMC(convertedMana: Int) <br> +deckToHand(card: Deck): void
+| - cardName: String <br>- cardColor: String <br> - convertedManaCost: ManaCost <br>|
+|<\<create>\> +Card() <br> <\<create>\> +Card(cardName: String, cardColor: String, convertedMana: ManaCost) <br><br> +getCardName(): String <br> +setCardName(cardName: String): void <br> +setCardColor(cardColor: String) <br> +getCardColor(): String <br> +getCMC(): ManaCost <br> +setCMC(convertedMana: ManaCost): Void<br> +removeCards(): Void <br> +getCMCtoString(convertedMannaCost: ManaCost): String<br><br> -validateName(cardName: String): Void 
+
+| +LandCard extends Card |
+|:-------|
+| - landType: String|
+|<\<create>\> +LandCard <br> <\<create>\> LandCard(landType: String)<br><br> +getLandType(): String <br> +setLandType(landType: String) <br><br> -validateLandType(landType: String)|
+
+| +ManaCost |
+|:-------|
+| -numOfRed: int <br> -numOfBlue: int <br> -numOfWhite: int <br> -numOfGreen: int <br> -numOfBlack: int <br> -numOfColorless: int <br> |
+|<\<create>\> +ManaCost <br> <\<create>\> +ManaCost(numOfRed: int, numOfBlue: int, numOfWhite: int, numOfGreen: int, numOfBlack: int, numOfColorless: int) <br><br>+getNumOfRed(): int <br> +getNumOfBlue(): int <br> +getNumOfWhite(): int <br> +getNumOfGreen(): int <br> +getNumOfBlack(): int <br> +getNumOfColorless(): int <br><br>+setNumOfRed(numOfRed: int): void <br> +setNumOfBlue(numOfBlue: int): void <br> +setNumOfWhite(numOfWhite: int): void <br> +setNumOfGreen(numOfGreen: int): void <br> +setNumOfBlack(numOfBlack: int): void <br> +setNumOfColorless(numOfColorless: int): void <br><br>-validateCost(int)|
 
