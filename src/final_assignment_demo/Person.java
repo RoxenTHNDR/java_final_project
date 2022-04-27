@@ -30,6 +30,21 @@ public class Person implements Comparable<Person> {
         }
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        validateLastName(lastName);
+        this.lastName = lastName;
+    }
+
+    private void validateLastName(String lastName) {
+        if(lastName == null || lastName.equals("")) {
+            throw new IllegalArgumentException("Last Name is required");
+        }
+    }
+
     @Override
     public String toString() {
         return String.format("First name: %s%nLast name: %s%n%n", firstName, lastName);
