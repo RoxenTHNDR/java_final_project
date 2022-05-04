@@ -307,6 +307,10 @@ public class Chapter4 {
         // Call the mixedNumber method. Print the value returned. It should print "2 3/5".
 
         System.out.println(frac9.mixedNumber());
+
+
+        Fraction fraction10 = new Fraction(-2, 3);
+        System.out.println(fraction10.mixedNumber());
     
     }
 
