@@ -33,7 +33,7 @@ public class Card implements Comparable<Card>{
     }
 
     public String getCardColor(){
-        return cardName;
+        return cardColor;
     }
 
     public void setCardColor(String color){
@@ -65,7 +65,7 @@ public class Card implements Comparable<Card>{
     
     @Override
     public int compareTo(Card o) {
-        int result = this.cardName.compareTo(o.cardName);
+        int result = this.cardColor.compareTo(o.cardColor);
         return result;
     }
 }

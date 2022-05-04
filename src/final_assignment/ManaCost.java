@@ -97,5 +97,10 @@ public class ManaCost {
             throw new IllegalArgumentException("Mana cost cannot be negitive");
         }
     }
+
+    public int getTotalCost(){
+        return red + blue + black + white + green + colorless;
+    }
+
 }
 
